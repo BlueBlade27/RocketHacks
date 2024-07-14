@@ -1,5 +1,5 @@
 
-/* Reset styles for body and html */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -9,27 +9,26 @@ body, html {
     height: 100%;
 }
 
-/* Background image for splash screen */
+
 #splash-screen {
-    background-image: url('giphy.gif'); /* Replace 'path/to/your/image.jpg' with your image file path */    
+    background-image: url('giphy.gif');  
     background-size: cover;
     background-position: center;
 }
 #inputTitlePage{
-    background-image: url('giphy.gif'); /* Replace 'path/to/your/image.jpg' with your image file path */    
+    background-image: url('giphy.gif');    
     background-size: cover;
     background-position: center;
 }
 
 #addCardPage{
-    background-image: url('giphy.gif'); /* Replace 'path/to/your/image.jpg' with your image file path */    
+    background-image: url('giphy.gif');   
     background-size: cover;
     background-position: center;
 }
 
-/* Background image for main page with increased transparency */
 #main-page {
-    background-image: url('w3n46nk83ir81.gif'); /* Replace with your image path */
+    background-image: url('w3n46nk83ir81.gif'); 
     background-size: cover;
     background-position: center;
     
@@ -38,22 +37,20 @@ body, html {
 .hidden {
     display: none;
 }
-/* Flexbox centering utility */
 .centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Use viewport height for full-screen height */
+    height: 100vh; 
 }
 
-/* General button styles */
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border: none;
-    border-radius: 10px; /* Rounded edges */
+    border-radius: 10px; 
     background-color: #555;
     color: white;
     transition: background-color 0.3s ease;
@@ -63,12 +60,10 @@ button:hover {
     background-color: #777;
 }
 
-/* Hide elements by default */
 .hidden {
     display: none;
 }
 
-/* Animation for title2 */
 #title2 {
     animation: moveUp 2s forwards;
     position: relative;
@@ -89,58 +84,55 @@ button:hover {
 }
 
 #aboutPage {
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
-    background-image: url('giphy.gif'); /* Replace 'path/to/your/image.jpg' with your image file path */    
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    background-image: url('giphy.gif');    
     background-size: cover;
     background-position: center;
 }
 
 #aboutPage .title {
-    font-size: 24px; /* Title font size */
-    margin-bottom: 20px; /* Spacing */
+    font-size: 24px; 
+    margin-bottom: 20px; 
 }
 
 #title4 {
-    font-size: 20px; /* Title font size */
+    font-size: 20px; 
 }
 
 addCardPage
 
 #aboutPage button {
-    padding: 8px 16px; /* Button padding */
-    font-size: 16px; /* Button font size */
-    cursor: pointer; /* Pointer cursor */
-    border: none; /* No border */
-    border-radius: 10px; /* Rounded corners */
-    background-color: #555; /* Dark background */
-    color: white; /* Light text */
-    margin-top: 20px; /* Spacing */
+    padding: 8px 16px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 10px; 
+    background-color: #555; 
+    color: white; 
+    margin-top: 20px; 
 }
 
 #aboutPage button:hover {
-    background-color: #777; /* Darker background on hover */
+    background-color: #777; 
 }
 
 
-/* Header styles */
 .header {
     display: flex;
     align-items: center;
 }
 
-/* Settings button position */
 #settingsBtn {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1; /* Ensure settings button is above other content */
+    z-index: 1; 
     background-color: #555;
     color: white;
 }
 
-/* Settings menu styles */
 .settings-menu {
     position: fixed;
     top: 58px;
@@ -148,7 +140,7 @@ addCardPage
     background-color: #333;
     border: 1px solid #555;
     padding: 0;
-    z-index: 1; /* Ensure settings menu is above other content */
+    z-index: 1; 
 }
 
 .settings-menu ul {
@@ -174,7 +166,6 @@ addCardPage
     background-color: #444;
 }
 
-/* Generate button position */
 .generate-btn {
     position: absolute;
     top: 20px;
@@ -183,12 +174,11 @@ addCardPage
     color: white;
 }
 
-/* Add card button styles */
 .add-card-btn {
     font-size: 48px;
     cursor: pointer;
     border: none;
-    border-radius: 50%; /* Circular button */
+    border-radius: 50%; 
     background-color: #555;
     color: white;
     width: 80px;
@@ -203,7 +193,6 @@ addCardPage
     background-color: #777;
 }
 
-/* Complete button styles */
 .complete-btn {
     padding: 10px 20px;
     font-size: 16px;
@@ -219,7 +208,6 @@ addCardPage
     background-color: #45a049;
 }
 
-/* Flashcards display styles */
 #flashcardsDisplay {
     display: flex;
     flex-direction: column;
@@ -238,14 +226,14 @@ addCardPage
 .card-form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center; 
 }
 
 .add-card-btn {
     font-size: 48px;
     cursor: pointer;
     border: none;
-    border-radius: 50%; /* Circular button */
+    border-radius: 50%; 
     background-color: #555;
     color: white;
     width: 80px;
@@ -293,7 +281,6 @@ addCardPage
     transform: rotateY(180deg);
 }
 
-/* Decks container styles */
 .decks-container {
     display: flex;
     flex-wrap: wrap;
