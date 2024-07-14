@@ -1,0 +1,335 @@
+
+/* Reset styles for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    height: 100%;
+}
+
+/* Background image for splash screen */
+#splash-screen {
+    background-image: url('giphy.gif'); /* Replace 'path/to/your/image.jpg' with your image file path */    
+    background-size: cover;
+    background-position: center;
+}
+#inputTitlePage{
+    background-image: url('giphy.gif'); /* Replace 'path/to/your/image.jpg' with your image file path */    
+    background-size: cover;
+    background-position: center;
+}
+
+#addCardPage{
+    background-image: url('giphy.gif'); /* Replace 'path/to/your/image.jpg' with your image file path */    
+    background-size: cover;
+    background-position: center;
+}
+
+/* Background image for main page with increased transparency */
+#main-page {
+    background-image: url('w3n46nk83ir81.gif'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.hidden {
+    display: none;
+}
+/* Flexbox centering utility */
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use viewport height for full-screen height */
+}
+
+/* General button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px; /* Rounded edges */
+    background-color: #555;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+/* Hide elements by default */
+.hidden {
+    display: none;
+}
+
+/* Animation for title2 */
+#title2 {
+    animation: moveUp 2s forwards;
+    position: relative;
+}
+
+#title3 {
+    animation: moveUp 4s forwards;
+    position: relative;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(calc(-400% + 20px));
+    }
+}
+
+#aboutPage {
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    background-image: url('giphy.gif'); /* Replace 'path/to/your/image.jpg' with your image file path */    
+    background-size: cover;
+    background-position: center;
+}
+
+#aboutPage .title {
+    font-size: 24px; /* Title font size */
+    margin-bottom: 20px; /* Spacing */
+}
+
+#title4 {
+    font-size: 20px; /* Title font size */
+}
+
+addCardPage
+
+#aboutPage button {
+    padding: 8px 16px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Pointer cursor */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #555; /* Dark background */
+    color: white; /* Light text */
+    margin-top: 20px; /* Spacing */
+}
+
+#aboutPage button:hover {
+    background-color: #777; /* Darker background on hover */
+}
+
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+}
+
+/* Settings button position */
+#settingsBtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* Ensure settings button is above other content */
+    background-color: #555;
+    color: white;
+}
+
+/* Settings menu styles */
+.settings-menu {
+    position: fixed;
+    top: 58px;
+    left: 23px;
+    background-color: #333;
+    border: 1px solid #555;
+    padding: 0;
+    z-index: 1; /* Ensure settings menu is above other content */
+}
+
+.settings-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.settings-menu li {
+    padding: 5px 0;
+}
+
+.settings-menu button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.settings-menu button:hover {
+    background-color: #444;
+}
+
+/* Generate button position */
+.generate-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #555;
+    color: white;
+}
+
+/* Add card button styles */
+.add-card-btn {
+    font-size: 48px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    background-color: #555;
+    color: white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.add-card-btn:hover {
+    background-color: #777;
+}
+
+/* Complete button styles */
+.complete-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+}
+
+.complete-btn:hover {
+    background-color: #45a049;
+}
+
+/* Flashcards display styles */
+#flashcardsDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.flashcards-container-main {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.add-card-btn {
+    font-size: 48px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    background-color: #555;
+    color: white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.flashcard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Decks container styles */
+.decks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.deck {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.deck:hover {
+    background-color: #555;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #c94239;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.delete-btn:hover {
+    background-color: #c94239;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashLearn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="splash-screen" class="centered">
+        <h1 class="title">FlashLearn</h1>
+        <button id="getStartedBtn">Get Started</button>
+    </div>
+
+    <div id="main-page" class="centered hidden">
+        <div class="header">
+            <button id="settingsBtn">Settings</button>
+            <h1 id="title2" class="title">Welcome to FlashLearn</h1>            
+            <button id="generateBtn" class="generate-btn">Generate</button>
+        </div>
+        <div id="librarySection" class="library-section">
+
+            <h2 id="title3" class="library-title">Your flashcards</h2>
+        </div>   
+        <div id="librarySection" class="library-section">
+            <div id="decksContainer" class="decks-container">
+                <!-- Decks will be dynamically populated here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="inputTitlePage" class="centered hidden">
+        <h1 class="title">Input title of deck</h1>
+        <input type="text" id="titleInput" placeholder="Enter title...">
+        <br>
+        <button id="continueBtn">Continue</button>
+        <br>
+        <button id="backtoMainPgBtn">Back</button>
+    </div>
+
+    <div id="addCardPage" class="centered hidden">
+        <div id="cardForm" class="card-form">
+            <h1 id="title4" class="title">Click to add</h1>
+            <button id="addCardBtn" class="add-card-btn">+</button>
+            <br>
+            <input type="text" id="questionInput" class="hidden" placeholder="Enter question...">
+            <input type="text" id="answerInput" class="hidden" placeholder="Enter answer...">
+            <br>
+            <button id="saveCardBtn" class="hidden">Save</button>
+        </div>
+        <div id="flashcardsContainer" class="flashcards-container"></div>        
+        <br>
+        <button id="completeBtn" class="complete-btn hidden">Complete</button>
+    </div>
+
+    <div id="settingsMenu" class="settings-menu hidden">
+        <ul>
+            <li><button id="musicToggleBtn">Music: On</button></li>
+            <li><button id="aboutBtn">About</button></li>
+        </ul>
+    </div>
+    <div id="aboutPage" class="centered hidden">
+        <h1 class="title">HII!</h1>        
+        <h1 class="title">My name is Deepika Chandrashekar and I created a website</h1>
+        <h1 class="title">where students can create flashcards to study ^^</h1>
+        <button id="backToSettingsBtn">Back</button>
+    </div>
+
+    <div id="flashcardsDisplay" class="centered hidden">
+        <div id="flashcardsContainerMain" class="flashcards-container-main">
+            <!-- Flashcard elements will be dynamically populated here -->
+        </div>
+        <button id="backToMainBtn">Back to Main Page</button>
+        <div id="cardNavigation" class="card-navigation">
+            <button id="prevCardBtn">Prev</button>
+            <button id="flipCardBtn">Flip</button>
+            <button id="nextCardBtn">Next</button>
+        </div>
+    </div>    
+
+    <audio id="backgroundMusic" src="10 Minute Countdown Timer with Relaxing Jazz Music for a Break _ 10분 타이머 + 편안한 재즈음악 힐링타임 쉬는 시간 카운트다운.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
